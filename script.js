@@ -1,3 +1,4 @@
+
 // label animation
 const inputs = document.querySelectorAll('.form_control input');
 const labels = document.querySelectorAll('.form_control label');
@@ -13,7 +14,6 @@ labels.forEach(label => {
 
 
 // password hide and show
-let password = document.getElementById("password");
 let eyeIcon = document.getElementById("eye_icon");
 
 eyeIcon.addEventListener("click", () => {
@@ -29,8 +29,7 @@ eyeIcon.addEventListener("click", () => {
 });
 
 
-let signpassword = document.getElementById("signpassword");
-let confirmpassword = document.getElementById("confirmpassword");
+
 let eyeicon = document.getElementById("eyeicon");
 
 eyeicon.addEventListener("click", () => {
@@ -74,24 +73,33 @@ loginLink.addEventListener("click",()=>{
 
 
 // button shake
-document.getElementById('submitButton').addEventListener('click', function() {
-    const username = document.getElementById('username').value.trim();
-    const password = document.getElementById('password').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const signpassword = document.getElementById('signpassword').value.trim();
-    const confirmpassword = document.getElementById('confirmpassword').value.trim();
+const buttons = document.querySelectorAll('#submitButton');
 
-  
-    if (username === '' || password === '' || email === '' || signpassword === '' || confirmpassword === '') {
-   
-      this.classList.add('shake-animation');
-      setTimeout(() => {
-         this.classList.remove('shake-animation')
-      }, 2000);
-    }
-    if (username !== '' || password !== '' || email !== '' || signpassword  !== '' || confirmpassword !== '') {
-         this.classList.remove("shake-animation")
-      }
-  });
+buttons.forEach(button => {
+    button.addEventListener('click', function() {
+        const username = document.getElementById('username').value.trim();
+        const password = document.getElementById('password').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const signpassword = document.getElementById('signpassword').value.trim();
+        const confirmpassword = document.getElementById('confirmpassword').value.trim();
+
+        if (username === '' || password === '' || email === '' || signpassword === '' || confirmpassword === '') {
+             console.log(this);
+            this.classList.add('shake-animation');
+            setTimeout(() => {
+               this.classList.remove('shake-animation')
+            }, 2000);
+          }
+          if (username !== '' || password !== '' || email !== '' || signpassword  !== '' || confirmpassword !== '') {
+
+                setTimeout(()=>{
+                     button.innerHTML=" Success"
+                },1200)
+                
+               this.classList.remove("shake-animation")
+            }
+    });
+});
+
   
 

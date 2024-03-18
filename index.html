@@ -47,24 +47,26 @@
         <span class="bg_animation2"></span>
         <!-- login form -->
         <div class="form_container login">
-          <h2 class="animation" style="--i:0; --j:19;">Login</h2>
-          <form action="#">
+          <h2 class="animation" style="--i:0; --j:19;">Login </h2>
+          <form action="#" >
           
             <div class="form_control animation " style="--i:1; --j:20;">
               <input type="text" id="username"  required autocomplete="off"/>
               <label for="username" >Username</label>
               <i class="fa-solid fa-user"></i>
-              
+              <span class="err" id="usernameErr"></span>
             </div>
 
             <div class="form_control animation" style="--i:2; --j:21;">
               <input type="password" id="password" required autocomplete="off" />
               <label for="password">Password</label>
               <i class="fa-solid fa-eye-slash" id="eye_icon"></i>
+              <span class="err" id="passwordErr"></span>
             </div>
 
             <div >
-              <button type="submit"  id="submitButton" class="login_btn animation" style="--i:3; --j:22;"><a href="#">Login</a></button>
+              <button type="submit"  id="submitButton" class="login_btn animation " style="--i:3; --j:22;" ><a href="#">Login</a></button>
+         
            </div>
             <div class="register_link animation" style="--i:4; --j:23;">
               <p>
@@ -90,28 +92,32 @@
             <input type="text" id="username"  required autocomplete="off"/>
             <label for="username" >Username</label>
             <i class="fa-solid fa-user"></i>
+            <span class="err" id="usernameErr"></span>
           </div>
 
           <div class="form_control animation" style="--i:13; --j:3;">
             <input type="text" id="email"  required autocomplete="off"/>
             <label for="username" >Email</label>
             <i class="fa-solid fa-envelope"></i>
+            <span class="err" id="emailErr"></span>
           </div>
 
           <div class="form_control animation" style="--i:14; --j:4;">
             <input type="password" id="signpassword" required autocomplete="off" />
             <label for="signpassword">Password</label>
             <i class="fa-solid fa-eye-slash" id="eyeicon"></i>
+            <span class="err" id="passwordErr"></span>
           </div>
 
           <div class="form_control animation" style="--i:15; --j:5;">
             <input type="password" id="confirmpassword" required autocomplete="off" />
             <label for="confirmpassword">Confirm Password</label>
             <i class="fa-solid fa-eye-slash" id="confirmEyeIcon"></i>
+            <span class="err" id="confirmpassErr"></span>
           </div>
 
           <div >
-            <button type="submit"  id="submitButton" style="--i:16; --j:6;" class="login_btn animation"><a href="#">Sign Up</a></button>
+            <button type="submit"  id="submitButton" style="--i:16; --j:6;" class="login_btn animation" ><a href="#">Sign Up</a></button>
          </div>
           <div class="login_link animation" style="--i:17; --j:7; ">
             <p>
@@ -128,62 +134,6 @@
          </div>
       </div>  
      
-          <!-- background loader --> 
-           <!-- <span class="background_loader">
-            <span style="--l:0;"></span>
-            <span style="--l:1"></span>
-            <span style="--l:2;"></span>
-            <span style="--l:3;"></span>
-            <span style="--l:4;"></span>
-            <span style="--l:5;"></span>
-            <span style="--l:6;"></span>
-            <span style="--l:7;"></span>
-            <span style="--l:8;"></span>
-            <span style="--l:9;"></span>
-            <span style="--l:10"></span>
-            <span style="--l:11;"></span>
-            <span style="--l:12;"></span>
-            <span style="--l:13;"></span>
-            <span style="--l:14;"></span>
-            <span style="--l:15;"></span>
-            <span style="--l:16;"></span>
-            <span style="--l:17;"></span>
-            <span style="--l:18;"></span>
-            <span style="--l:19"></span>
-            <span style="--l:20;"></span>
-            <span style="--l:21;"></span>
-            <span style="--l:22;"></span>
-            <span style="--l:23;"></span>
-            <span style="--l:24;"></span>
-            <span style="--l:25;"></span>
-            <span style="--l:26;"></span>
-            <span style="--l:27;"></span>
-            <span style="--l:28"></span>
-            <span style="--l:29;"></span>
-            <span style="--l:30;"></span>
-            <span style="--l:31;"></span>
-            <span style="--l:32;"></span>
-            <span style="--l:33;"></span>
-            <span style="--l:34;"></span>
-            <span style="--l:35;"></span>
-            <span style="--l:36;"></span>
-            <span style="--l:37;"></span>
-            <span style="--l:38;"></span>
-            <span style="--l:39;"></span>
-            <span style="--l:40;"></span>
-            <span style="--l:41;"></span>
-            <span style="--l:42;"></span>
-            <span style="--l:43;"></span>
-            <span style="--l:44"></span>
-            <span style="--l:45;"></span>
-            <span style="--l:46;"></span>
-            <span style="--l:47;"></span>
-            <span style="--l:48;"></span>
-            <span style="--l:49;"></span>
-            <span style="--l:50;"></span>
-            <span style="--l:51;"></span>
-        </span>  -->
-
     </div>
 
     <script src="script.js"></script>
